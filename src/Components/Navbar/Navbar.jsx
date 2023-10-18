@@ -17,8 +17,7 @@ export default function Navbar() {
           <option value="bubbleSort">Bubble Sort</option>
           <option value="insertionSort">Insertion Sort</option>
           <option value="selectionSort">Selection Sort</option>
-          <option value="quickeSort">Quick Sort</option>
-          <option value="heapSort">Heap Sort</option>
+          <option value="quickSort">Quick Sort</option>
         </select>
         <button
           onClick={sort}

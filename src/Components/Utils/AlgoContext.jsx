@@ -3,6 +3,7 @@ import insertionSort from "./insertionSort";
 import mergeSort from "./mergeSort";
 import bubbleSort from "./bubbleSort";
 import selectionSort from "./selectionSort";
+import quickSort from "./quickSort";
 
 const AlgoContext = createContext(null);
 
@@ -44,6 +45,11 @@ export function Algocontext({ children }) {
       }
       case "selectionSort": {
         const [newArr, animArr] = selectionSort(items);
+        animateDivs(newArr, animArr);
+        break;
+      }
+      case "quickSort": {
+        const [newArr, animArr] = quickSort(items);
         animateDivs(newArr, animArr);
         break;
       }
